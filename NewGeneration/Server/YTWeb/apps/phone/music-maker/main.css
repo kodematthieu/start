@@ -1,0 +1,232 @@
+section > article {
+  display: none;
+  background-color: #333;
+}
+#not-in-project {
+  background-color: #ddd;
+  margin: auto;
+  margin-top: 150px;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#not-in-project >
+#button {
+  height: 25px;
+  background-color: var(--primary-color1);
+  padding: 12.5px 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+#not-in-project >
+#button > .label {
+  font-family: "Poppins", Sans-Serif;
+  color: #fff;
+}
+#not-in-project >
+#button > .fas {
+  color: #fff;
+  line-height: 30px;
+}
+#not-in-project >
+#button.drop + div:not(#button) {
+  height: 150px;
+}
+#not-in-project >
+div:not(#button) {
+  box-shadow: inset 0 2px 5px #555;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+  position: relative;
+}
+#not-in-project >
+.create-section >
+#form-input {
+  top: 15px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 16px;
+}
+#not-in-project >
+.create-section >
+#form-input >
+input {
+  padding: 7.5px;
+  font-size: 16px;
+  font-family: "Montserrat", Sans-Serif;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+#not-in-project >
+.create-section >
+#form-input >
+input:focus {
+  border-color: var(--primary-color1);
+}
+#not-in-project >
+.create-section >
+#form-input >
+label:not(:last-child) {
+  width: max-content;
+  font-family: "Poppins", Sans-Serif;
+  transform: translate(9%, -130%) scale(1);  
+  font-size: 16px;
+  color: #777;
+  transition: 0.4s ease;
+  position: absolute;
+  top: 53px;
+}
+#not-in-project >
+.create-section >
+#form-input >
+input:-webkit-any(:focus, :valid) + label {
+  transform: translate(-5%, -240%) scale(0.9);
+  color: #000;
+}
+#not-in-project >
+.create-section >
+#form-input >
+label:last-child {
+  width: max-content;
+  height: max-content;
+  font-family: "Poppins", Sans-Serif;
+  font-size: 12px;
+  color: #f00;
+  opacity: 0;
+}
+#not-in-project > .create-section > span.submit {
+  margin: auto;
+  padding: 8px 0;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Poppins", Sans-Serif;
+  font-size: 13px;
+  background-color: var(--primary-color1);
+  width: 80%;
+  display: block;
+  color: #fff;
+  position: relative;
+  top: 20px;
+}
+#not-in-project > .search-section > .no-project {
+  position: absolute;
+  color: #555;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: max-content;
+  font-family: "Montserrat", Sans-Serif;
+  font-size: 12px;
+}
+#not-in-project > .search-section > .project {
+  width: 100%;
+}
+#in-project > #plusbtn {
+  bottom: 15px;
+  right: 15px;
+  position: fixed;
+  z-index: 10;
+}
+#in-project > #plusbtn > #btn {
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: var(--tertary-color1);
+  position: absolute;
+  border-radius: 50% 50%;
+  box-shadow: 0 0 5px #111;
+  transition: 250ms linear;
+  z-index: 2;
+}
+#in-project > #plusbtn > #btn.active {
+  transform: rotate(135deg);
+}
+#in-project > #plusbtn > #btn > span {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background-color: #FFF;
+  border-radius: 10px;
+}
+#in-project > #plusbtn > #btn > span:first-child {
+  width: 50%;
+  height: 5px;
+}
+#in-project > #plusbtn > #btn > span:nth-child(2) {
+  height: 50%;
+  width: 5px;
+}
+#in-project > #plusbtn > #list {
+  height: 175px;
+  position: absolute;
+  bottom: 70px;
+  right: 15px;
+  min-width: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(160%);
+  opacity: 0;
+  transition: 250ms linear;
+  display: flex;
+}
+#in-project > #plusbtn > #list.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+#in-project > #plusbtn > #list > div {
+  align-self: flex-end;
+}
+#in-project > #plusbtn > #list > div:hover > span {
+  outline: 1px solid #fff;
+}
+#in-project > #plusbtn > #list > div > span {
+  display: inline-block;
+  color: #fff;
+}
+#in-project > #plusbtn > #list > div > #label {
+  font-family: "Poppins", Sans-Serif;
+  background-color: #333;
+  padding: 0 10px;
+  border-radius: 2px 0 0 2px;
+}
+#in-project > #plusbtn > #list > div[data-disabled=""]:hover > span {
+  outline: 1px solid #f00;
+}
+#in-project > #plusbtn > #list > div[data-disabled=""] {
+  filter: brightness(50%) contrast(75%);
+}
+#in-project > #plusbtn > #list > div > #icon {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 2px;
+  line-height: 30px;
+  text-align: center;
+}
+#in-project > #plusbtn > #list > div:nth-child(1) > #icon {
+  background: linear-gradient(to bottom right, #a5f 0%, #973FEF 27%, #7000DF 30%, #6000BF 72%, #5800AF 75%, #50009F 100%);
+}
+#in-project > #plusbtn > #list > div:nth-child(2) > #icon {
+  background: linear-gradient(to bottom right, #a5f 0%, #973FEF 27%, #7000DF 30%, #6000BF 72%, #5800AF 75%, #50009F 100%);
+}
+#in-project > #plusbtn > #list > div:nth-child(3) > #icon {
+  background: linear-gradient(to bottom right, #7f5 0%, #62EF3F 27%, #2DDF00 30%, #26BF00 72%, #23AF00 75%, #209F00 100%);
+}
+#in-project > #plusbtn > #list > div:nth-child(4) > #icon {
+  background: linear-gradient(to bottom right, #59f 0%, #3F85EF 27%, #0059DF 30%, #004CBF 72%, #0046AF 75%, #00409F 100%);
+}
+#in-project > #plusbtn > #list > div:nth-child(5) > #icon {
+  background: linear-gradient(to bottom right, #f55 0%, #e33 27%, #d00 30%, #b00 72%, #a00 75%, #900 100%);
+}

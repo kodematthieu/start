@@ -1,0 +1,11 @@
+{
+  "name": "3dp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib",
+  "scripts": {
+    "test": "nodemon test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

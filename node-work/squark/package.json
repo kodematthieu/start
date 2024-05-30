@@ -1,0 +1,32 @@
+{
+  "name": "squark",
+  "version": "1.0.0",
+  "description": "Utility command line interface",
+  "main": "./bin/squark",
+  "bin": {
+    "squark": "bin/squark"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test": "node test.js",
+    "postinstall": "bash ./scripts/postinstall"
+  },
+  "keywords": [],
+  "os": [
+    "linux",
+    "android"
+  ],
+  "cpu": [
+    "x64",
+    "arm"
+  ],
+  "author": "Karel Matthieu Logro <mickreys249@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-escapes": "^4.3.2",
+    "chalk": "^4.1.0",
+    "compile-run": "^2.3.4",
+    "commander": "^7.2.0"
+  },
+  "devDependencies": {}
+}

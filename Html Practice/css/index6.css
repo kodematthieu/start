@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&family=Oswald&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+              linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  background-color: #708090;
+  background-size: 64px 128px;
+}
+header {
+  width: 100%;
+  user-select: none;
+  background: linear-gradient(135deg,hsl(0,0%,15%),#070707);
+  z-index: 50;
+  position: fixed;
+  top: 0;
+}
+header > .title {
+  font-family: Courier New;
+  font-size: 30px;
+  font-weight: 600;
+  background: transparent;
+  color: white;
+}
+header > nav {
+  display: grid;
+  width: 100%;
+  grid-gap: 1px;
+  height: 51px;
+}
+header > nav > span {
+  display: block;
+  background: cyan;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Courier New;
+  line-height: 50px;
+  background: linear-gradient(135deg, #ffd700 0%, #ffa700 27%, #ff7700 30%, #ff6000 72%, #ff3000 75%, #ff0000 100%);
+  color: white;
+  filter: brightness(60%);
+  transition: all 0.5s ease;
+}
+header > nav > span.highlight {
+  filter: brightness(100%);
+}
+header > nav > span.active {
+  filter: brightness(90%);
+}
+header > nav > #uuid {
+  grid-column: 1;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+header > nav > #color {
+  grid-column: 2;
+  border-radius: 3px;
+}
+header > nav > #settings {
+  grid-column: 3;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+header > #dropdown > div {
+  top: 84.5px;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  font-family: "Poppins", Sans-Serif;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  overflow: hidden;
+}
+header > #dropdown > div > label {
+  display: block;
+  padding: 5px;
+  height: 27.5px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+header > #dropdown > div > label > span {
+  margin-left: 5px;
+}
+header > #dropdown > .dropdown-uuid {
+  width: 60%;
+  box-shadow: 5px 5px 5px #555;
+  border-bottom-right-radius: 5px;
+  height: 80px;
+  opacity: 0;
+  display: none;
+  transition: all 0.5s;
+}
+#results {
+  font-family: "Fira Sans";
+  position: relative;
+  top: 99px;
+}
+#results > .uuid {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 2.5px;
+  background: linear-gradient(90deg,#B0F3F1,#FFCFDF);
+  opacity: 0.75;
+}
+
+.green {
+  background: linear-gradient(135deg, #3bb78f 0%, #0bab64 74%);
+  transition: all 0.5s ease;
+}
+.red {
+  background: linear-gradient(315deg, #bd4f6c 0%, #d7816a 74%);
+  transition: all 0.5s ease;
+}

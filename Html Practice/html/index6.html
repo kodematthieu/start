@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UUID Generator v2</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../css/index6.css" type="text/css" media="all" />
+    <script src="../js/index6.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">UUID Generator</h1>
+      <nav>
+        <span id="uuid" class="highlight">UUID</span>
+        <span id="color" class="highlight">COLOR</span>
+        <span id="settings" class="highlight">SETTINGS</span>
+      </nav>
+      <div id="dropdown">
+        <div class="dropdown-uuid">
+          <label class="capital" id="checkbox">
+            <span class="head">CAPITALIZE</span>
+            <input type="checkbox" hidden/>
+          </label>
+          <label class="copy" id="button">
+            <span class="head">COPY UUID</span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <div id="results">
+      <span class="uuid"></span>
+      <input type="text" id="copier" value="Hello" onclick="javascript: document.execCommand('copy')"/>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "engine",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Karel Matthieu L. Logro <mickreys249@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "js-interpreter-npm": "^1.0.5"
+  }
+}

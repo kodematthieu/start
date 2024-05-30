@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pass Store</title>
+        <link rel="preload" as="image" href="images/background.jpeg"/>
+        <link rel="preload" as="image" href="images/loading.gif"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <script type="application/javascript" charset="utf-8">window.onerror = (...err) => alert(err.join("\n"))</script>
+        <script src="https://kit.fontawesome.com/106b6da9c3.js"></script>
+        <script src="./jQuery.js"></script>
+        <script src="./Util.js"></script>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div id="form">
+            <div class="container">
+                <div class="switch">
+                    <input type="radio" name="form" id="login" checked>
+                    <label for="login" class="title login">LOGIN</label>
+                    <input type="radio" name="form" id="register">
+                    <label for="register" class="title register">REGISTER</label>
+                    <span class="background"></span>
+                </div>
+                <div class="content">
+                    <div class="login">
+                        <div class="input user">
+                            <input type="text" placeholder="Username" class="text-user inactive" pattern="[a-zA-Z]\S{8,32}" required>
+                            <span class="fas fa-user"></span>
+                            <div class="error">
+                              <span class="fas"></span>
+                              <span class="text"></span>
+                            </div>
+                        </div>
+                        <div class="input pass">
+                            <input type="password" placeholder="Password" class="text-pass inactive" minlength="8" maxlength="32" required>
+                            <span class="fas fa-lock"></span>
+                            <div class="error">
+                              <span class="fas"></span>
+                              <span class="text"></span>
+                            </div>
+                        </div>
+                        <div class="check keep">
+                            <input type="checkbox" id="keep">
+                            <label for="keep">Keep Me In</label>
+                        </div>
+                    </div>
+                    <div class="register">
+                        <div class="input user">
+                            <input type="text" placeholder="Username" class="text-user inactive" pattern="[a-zA-Z]\S{8,32}" required>
+                            <span class="fas fa-user"></span>
+                            <div class="error">
+                              <span class="fas"></span>
+                              <span class="text"></span>
+                            </div>
+                        </div>
+                        <div class="input pass">
+                            <input type="password" placeholder="Password" class="text-pass inactive" minlength="8" maxlength="32" required>
+                            <span class="fas fa-lock"></span>
+                            <div class="error">
+                              <span class="fas"></span>
+                              <span class="text"></span>
+                            </div>
+                        </div>
+                        <div class="input confirm">
+                            <input type="password" placeholder="Confirm Password" class="text-confirm inactive" minlength="8" maxlength="32" required>
+                            <span class="fas fa-check"></span>
+                            <div class="error">
+                              <span class="fas"></span>
+                              <span class="text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="CONFIRM" class="submit">
+            </div>
+        </div>
+        <div id="content">
+            <div class="header"></div>
+            <div class="section"></div>
+        </div>
+    </body>
+</html>

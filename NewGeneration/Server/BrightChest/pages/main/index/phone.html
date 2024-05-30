@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=title[1]%> | <%=namespace%></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <meta name="google-site-verification" content="BS-ysMHiA9F3QYmBps8FdbPVo3SqnQ91JCZapGtdRyg"/>
+    <script data-ad-client="ca-pub-3545946442033482" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="/assets/script/main/index/jquery" type="application/javascript" charset="utf-8"></script>
+    <script src="/assets/script/main/index/jquery.bbq" type="application/javascript" charset="utf-8"></script>
+    <script src="/assets/script/main/index/Module" type="application/javascript" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <% for(let e of prescripts) { %><script src="<%=e%>" type="application/javascript" charset="utf-8"></script><% } %>
+    <% for(let e of prestyles) { %><link rel="stylesheet" href="<%=e%>" type="text/css" media="all"/><% } %>
+    <script src="/assets/script/main/index/phone" type="application/javascript" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="/assets/style/main/index/phone" type="text/css" media="all" />
+    <% for(let e of scripts) { %><script src="<%=e%>" type="application/javascript" charset="utf-8" defer></script><% } %>
+    <% for(let e of styles) { %><link rel="stylesheet" href="<%=e%>" type="text/css" media="all"/><% } %>
+  </head>
+  <body>
+    <header>
+      <img src="" alt="logo" class="main-logo"/>
+      <h1 id="title"><%=namespace%></h1>
+      <span class="nav-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </header>
+    <aside id="nav">
+      <nav id="main">
+        <span data-execute="redirect:/"><i class="fas fa-home"></i>home</span>
+        <span data-execute="redirect:/apps"><i class="fas fa-ghost"></i>apps</span>
+      </nav>
+      <nav id="account">
+        <span data-execute="lambda:signIn"><i class="fas fa-sign-in-alt"></i>sign in</span>
+        <span data-execute="lambda:signUp"><i class="fas fa-user-plus"></i>sign up</span>
+      </nav>
+      <nav id="info">
+        <span data-execute="redirect:/status"><i class="fas fa-chart-bar"></i>status</span>
+        <span data-execute="redirect:/about"><i class="fas fa-info"></i>about</span>
+      </nav>
+    </aside>
+    <section><%- include(content, {title,namespace}); %></section>
+    <footer>
+      <!-- <a href="https://www.freepik.com/vectors/background">Background vector created by freepik - www.freepik.com</a> -->
+    </footer>
+  </body>
+</html>

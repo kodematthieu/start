@@ -1,0 +1,44 @@
+{
+  "blocks": {
+    "max": {"s": 2, "p": 6, "d": 10, "f": 14},
+    "order": [
+      {"block": "s", "lvl": 1},
+      {"block": "s", "lvl": 2},
+      {"block": "p", "lvl": 2},
+      {"block": "s", "lvl": 3},
+      {"block": "p", "lvl": 3},
+      {"block": "s", "lvl": 4},
+      {"block": "d", "lvl": 3},
+      {"block": "p", "lvl": 4},
+      {"block": "s", "lvl": 5},
+      {"block": "d", "lvl": 4},
+      {"block": "p", "lvl": 5},
+      {"block": "s", "lvl": 6},
+      {"block": "f", "lvl": 4},
+      {"block": "d", "lvl": 5},
+      {"block": "p", "lvl": 6},
+      {"block": "s", "lvl": 7},
+      {"block": "f", "lvl": 5},
+      {"block": "d", "lvl": 6},
+      {"block": "p", "lvl": 7},
+      {"block": "f", "lvl": 6},
+      {"block": "d", "lvl": 7},
+      {"block": "f", "lvl": 7}
+    ]
+  },
+  "formula": {
+    "proton": "atomic_number",
+    "neutron": "mass - proton"
+  },
+  "bonds": [
+    {
+      "name": "ionic", 
+      "rules": [
+        "alkali-metal:halogen", "alkaline-earth:nonmetal",
+        "transition-metal:nonmetal", "basic-metal:nonmetal",
+        "alkali-metal:nonmetal", "transition-metal:halogen",
+        "basic-metal:halogen"
+      ]
+    }
+  ]
+}

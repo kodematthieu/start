@@ -1,0 +1,123 @@
+@font-face {
+  font-weight: normal;
+ 	font-style: normal;
+ 	font-family: 'Mojangles';
+  src: url('../fonts/Mojangles.ttf') format('truetype');
+}
+@font-face {
+  font-weight: normal;
+ 	font-style: normal;
+ 	font-family: 'SegoeWP';
+  src: url('../fonts/SegoeWP.ttf') format('truetype');
+}
+@font-face {
+  font-weight: normal;
+ 	font-style: normal;
+ 	font-family: 'SegXboxSymbol';
+  src: url('../fonts/SegXboxSymbol.ttf') format('truetype');
+}
+@font-face {
+  font-weight: normal;
+ 	font-style: normal;
+ 	font-family: 'King';
+  src: url('../fonts/king_super_grotesk_offc_pro_medium.ttf') format('truetype');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  height: calc(100% - 50px);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+#grid {
+  margin: 2.5%;
+  background: white;
+  display: flex;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  box-shadow: -0.5px -0.5px 1px 1px #111;
+  position: fixed;
+  bottom: 0;
+  background: #dfc8ca;
+  overflow: visible;
+  user-select: none;
+}
+footer > .json {
+  width: 0px;
+  height: 0px;
+  outline: none;
+  text-align: center;
+  background: #722040;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.json + .file {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: 'King';
+  background: #d3394c;
+  padding: 4px 8px;
+  height: 27px;
+  min-width: 40%;
+  max-width: 65%;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px #111;
+  transition: all 0.5s ease;
+}
+.json + .file::selection {
+  color: #d3394c;
+  background: white;
+}
+.json:focus + .file {
+  color: #722040;
+  border: 1px solid #722040;
+}
+.info, .i {
+  position: absolute;
+}
+.info {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  right: calc(27px / 2);
+  top: 50%;
+}
+.info + .i {
+  user-select: none;
+  left: calc(100% - (27px * 2));
+  top: 50%;
+  transform: translateY(-50%);
+  height: 26px;
+  width: 26px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: 'SegoeWP';
+  background: #d3394c;
+  padding: 4px 4px;
+  padding-top: 1px;
+  text-align: center;
+  color: white;
+  box-shadow: 1px 1px 1px #111;
+  border: 1px solid #d3394c;
+  transition: all 0.5s ease;
+}
+.info:focus + .i {
+  color: #722040;
+  border: 1px solid #722040;
+}

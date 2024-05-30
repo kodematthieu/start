@@ -1,0 +1,19 @@
+{
+  "name": "@kmatthieu15/geomath",
+  "version": "0.0.1",
+  "description": "This is a geometrical math calculator. This includes 2d and 3d shapes",
+  "main": "lib",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "Math",
+    "Geometry",
+    "kmatthieu"
+  ],
+  "author": "Karel Matthieu L. Logro <mickreys249@gmail.com>",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  }
+}

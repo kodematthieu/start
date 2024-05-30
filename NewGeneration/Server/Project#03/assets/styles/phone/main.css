@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #734ae8;
+  background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: 0 5px 4px #0005;
+  user-select: none;
+  position: fixed;
+  top: 0;
+}
+header > #logo, header > #nav-btn > .btn {
+  background-color: #734ae8;
+  background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+  height: 40px;
+  width: 40px;
+  padding: 2.5px;
+  border-radius: 3px;
+  margin-top: 5px;
+  box-shadow: 2px 2px 2px #0005;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+header > #logo:hover, header > #nav-btn > .btn:hover {
+  transform: translate(1px,1px);
+  box-shadow: 1px 1px 1px #0005;
+}
+header > #title {
+  font-family: "Montserrat", Courier;
+  font-weight: 500;
+  line-height: 50px;
+  color: white;
+  width: 50%;
+}
+section {
+  margin-top: 70px;
+}

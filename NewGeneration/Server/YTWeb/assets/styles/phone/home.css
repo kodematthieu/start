@@ -1,0 +1,30 @@
+header.noscroll {
+  background-color: #ffffff0a;
+  background-image: none;
+  border-bottom: 2px solid #fff;
+  box-shadow: none;
+}
+header.noscroll > #nav-btn {
+  background-color: #ffffff0a;
+  background-image: none;
+  border: 1px solid #fff;
+  margin-top: 4px;
+}
+header.noscroll > #nav-btn:hover {
+  margin-top: 5px;
+}
+#nav.noscroll {
+  background-color: #ffffff0a;
+  background-image: none;
+  border-left: 2px solid #fff;
+  right: calc(-75vw - 2px);
+}
+#welcome {
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 500;
+  margin: 75px auto 0 auto;
+  width: max-content;
+  font-size: 20px;
+  
+}

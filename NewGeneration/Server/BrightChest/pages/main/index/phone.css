@@ -1,0 +1,117 @@
+*{margin:0;padding:0;font-size:100%;font-family:"Poppins",sans-serif}
+
+:root {
+  --primary: #81d4fa;
+  --complementary: #faa781;
+  --analogous1: #81fae4;
+  --analogous2: #8197fa;
+  --triadic1: #a781fa;
+  --triadic2: #fa81d4;
+}
+
+html {overflow-x: hidden}
+
+header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0px 1px 5px #aaa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 51;
+}
+header > .main-logo {
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 2.5px;
+  background-color: var(--complementary);
+  box-shadow: 2px 2px 0 var(--triadic1), -2px -2px 0 var(--triadic2);
+}
+header > #title {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+  font-family: Sans-Serif;
+}
+header > .nav-btn {
+  height: 40px;
+  width: 40px;
+  margin: 5px 0;
+  border-radius: 2.5px;
+  box-shadow: 2px 2px 0 var(--triadic1), -2px -2px 0 var(--triadic2);
+  animation: none;
+  background-color: var(--complementary);
+  display: block;
+  transition: all 2s ease;
+}
+header > .nav-btn.active {
+  animation: shadow-spin 2s linear infinite;
+}
+header > .nav-btn > span {
+  background-color: #fff;
+  width: 70%;
+  height: 5px;
+  margin-left: 15%;
+  margin-top: 15%;
+  border-radius: 20px;
+  display: block;
+  transition: all 0.2s ease;
+}
+header > .nav-btn.active > span:first-child {
+  transform: rotate(45deg) translate(5px, 10.5px);
+  width: 85%;
+}
+header > .nav-btn.active > span:nth-child(2) {
+  opacity: 0;
+}
+header > .nav-btn.active > span:last-child {
+  transform: rotate(-45deg) translate(5px, -10.5px);
+  width: 85%;
+}
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 77vw;
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: #fff;
+  z-index: 50;
+}
+aside > *, aside > * > * {width: 100%}
+aside > nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  position: relative;
+  z-index: 52;
+}
+aside > nav > span {
+  display: block;
+  text-transform: capitalize;
+}
+@keyframes shadow-spin {
+  0% {
+    box-shadow: 2px 2px 0 var(--triadic1), -2px -2px 0 var(--triadic2);
+  }
+  25% {
+    box-shadow: 2px -2px 0 var(--triadic1), -2px 2px 0 var(--triadic2);
+  }
+  50% {
+    box-shadow: -2px -2px 0 var(--triadic1), 2px 2px 0 var(--triadic2);
+  }
+  75% {
+    box-shadow: -2px 2px 0 var(--triadic1), 2px -2px 0 var(--triadic2);
+  }
+  100% {
+    box-shadow: 2px 2px 0 var(--triadic1), -2px -2px 0 var(--triadic2);
+  }
+}

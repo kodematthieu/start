@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "deploy"]
+	url = https://github.com/kmatthieu15/starry-star.git
+	fetch = +refs/heads/*:refs/remotes/deploy/*
+[branch "dev"]
+	remote = deploy
+	merge = refs/heads/dev
+[branch "master"]
+	remote = deploy
+	merge = refs/heads/master
+[remote "origin"]
+	url = https://git.heroku.com/starrystar.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

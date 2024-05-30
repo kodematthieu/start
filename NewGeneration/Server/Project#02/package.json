@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "servers/index.js",
+  "scripts": {
+    "test": "nodemon servers/index.js",
+    "start": "node servers/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "engines": {
+    "node": "^12.x.x"
+  },
+  "author": "Karel Matthieu <mickreys249@gmail.com>",
+  "license": "ISC"
+}

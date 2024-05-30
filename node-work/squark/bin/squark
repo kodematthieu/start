@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+require('../src/globals');
+const path = require('path');
+const fs = require('fs');
+const osType = require('os').type();
+
+if(!fs.existsSync($HOME+'/.cache/squark/config.json')) fs.writeFileSync($HOME+'/.cache/squark/config.json', JSON.flat(require('../config.json')).stringify(null, 2));
+
+if(fs.existsSync(path.resolve(__dirname, '../src/'+osType.toLowerCase()))) require('../src/'+osType.toLowerCase());
+else {
+  console.error('squark: OS not supported');
+  process.exit(1);
+}

@@ -1,0 +1,17 @@
+{
+  "name": "squark-engine",
+  "version": "0.0.1",
+  "description": "This is a game engine",
+  "main": "lib",
+  "scripts": {
+    "test": "nodemon test.js"
+  },
+  "keywords": [
+    "game",
+    "engine",
+    "web",
+    "physics"
+  ],
+  "author": "kmatthieu15",
+  "license": "ISC"
+}

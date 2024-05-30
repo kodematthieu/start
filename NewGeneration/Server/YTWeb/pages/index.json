@@ -1,0 +1,30 @@
+[
+  {
+    "route": "/",
+    "title": "Home",
+    "styles": [{"name": "home", "defer": true}],
+    "scripts": ["home"],
+    "content": "home"
+  },
+  {
+    "route": "/info/privacy-policy",
+    "title": "Privacy Policy",
+    "styles": ["info"],
+    "scripts": [{"name": "info", "defer": true}],
+    "content": "info/privacy-policy"
+  },
+  {
+    "route": "/info/terms-of-use",
+    "title": "Terms of Use",
+    "styles": ["info"],
+    "scripts": [{"name": "info", "defer": true}],
+    "content": "info/terms-of-use"
+  },
+  {
+    "route": "/apps",
+    "title": "Apps",
+    "styles": ["apps/index"],
+    "scripts": [{"name": "apps/index", "defer": true}],
+    "content": "apps/index"
+  }
+]

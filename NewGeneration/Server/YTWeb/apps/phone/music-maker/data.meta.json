@@ -1,0 +1,6 @@
+{
+  "pre_scripts": ["music"],
+  "scripts": ["main"],
+  "styles": ["main"],
+  "title": "Music Maker"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "chemical-bond",
+  "version": "0.0.1-Indev",
+  "description": "For chemistry purposes. Can be used to get the possible compound/molecule within the given element.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon test.js",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmatthieu15/chemical-bond.git"
+  },
+  "keywords": [
+    "chemistry",
+    "bonding",
+    "chemical-bond",
+    "elements"
+  ],
+  "author": "Karel Matthieu L. Logro <mickreys249@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmatthieu15/chemical-bond/issues"
+  },
+  "homepage": "https://github.com/kmatthieu15/chemical-bond#readme",
+  "dependencies": {
+    "molecular-formula": "^1.1.5"
+  },
+  "devDependencies": {
+    "cherio": "^1.0.0-rc.2",
+    "got": "^11.8.0"
+  }
+}

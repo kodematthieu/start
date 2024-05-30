@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <!-- Link Files -->
+    <script src="/assets/lib/jquery" type="text/javascript" charset="utf-8"></script>
+    <script src="/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/lib/p5" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/lib/score-system" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/lib/multiplayer" type="text/javascript" charset="utf-8"></script>
+    <script src="/tic-tac-toe/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/tic-tac-toe/objects.js" type="text/javascript" charset="utf-8"></script>
+    
+    <link rel="stylesheet" href="/tic-tac-toe/style.css" type="text/css" media="all" />
+    <script src="/tic-tac-toe/script.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <div id="game-status">
+      <h1 class="message">Play</h1>
+      <p>Play Again?</p>
+    </div>
+    <div id="game-settings">
+      <div id="gamemode" data-title="Game Mode" data-text-before="PvC" data-text-after="PvP"></div>
+      <div id="your-turn" data-disabled data-title="Your Turn" data-text-before="X" data-text-after="O"></div>
+    </div>
+    <p id="turn">&#x21A9;</p>
+  </body>
+</html>

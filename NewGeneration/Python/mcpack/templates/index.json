@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "name": "entities",
+      "path": "data/entities.json",
+      "variables": [
+        {
+          "name": "identifier",
+          "type": "str",
+          "path": "$this['minecraft:entity']['description']['identifier']",
+          "default": "($name.lower()):entity"
+        },
+        {
+          "name": "is_spawnable",
+          "type": "bool",
+          "path": "$this['minecraft:entity']['description']['is_spawnable']",
+          "default": true
+        },
+        {
+          "name": "is_summonable",
+          "type": "bool",
+          "path": "$this['minecraft:entity']['description']['is_summonable']",
+          "default": true
+        },
+        {
+          "name": "family_type",
+          "type": "list",
+          "path": "$this['minecraft:entity']['components']['minecraft:type_family']['family']",
+          "default": [ "mob" ]
+        },
+        {
+          "name": "breathable:total_supply",
+          "type": "int",
+          "path": "$this['minecraft:entity']['components']['minecraft:breathable']['total_supply']",
+          "default": 15
+        },
+        {
+          "name": "breathable:suffocate_time",
+          "type": "int",
+          "path": "$this['minecraft:entity']['components']['minecraft:breathable']['suffocate_time']",
+          "default": 15
+        },
+        {
+          "name": "collision_box:width",
+          "type": "float",
+          "path": "$this['minecraft:entity']['components']['minecraft:collision_box']['width']",
+          "default": 0.5
+        },
+        {
+          "name": "collision_box:height",
+          "type": "float",
+          "path": "$this['minecraft:entity']['components']['minecraft:collision_box']['height']",
+          "default": 0.5
+        },
+        {
+          "name": "movement",
+          "type": "float",
+          "path": "$this['minecraft:entity']['components']['minecraft:movement']['value']",
+          "default": 0.1
+        },
+        {
+          "name": "health:value",
+          "type": "float",
+          "path": "$this['minecraft:entity']['components']['minecraft:health']['value']",
+          "default": 10
+        },
+        {
+          "name": "health:max",
+          "type": "float",
+          "path": "$this['minecraft:entity']['components']['minecraft:health']['max']",
+          "default": 10
+        }
+      ]
+    }
+  ]
+}

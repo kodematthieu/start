@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=title%> | <%=namespace%></title>
+    <meta name="viewport" content="width=400, user-scalable=no"/>
+    <meta name="google-site-verification" content="BS-ysMHiA9F3QYmBps8FdbPVo3SqnQ91JCZapGtdRyg" />
+    <meta name="keywords" content="Starry Star, Science, Programming, AI"/>
+    <script data-ad-client="ca-pub-3545946442033482" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="/assets/script/Module?q=all" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/script/particle?q=all" type="text/javascript" charset="utf-8"></script>
+    <% for(let e of pre_scripts) { %><script src="/assets/script/<%=e.name%>" type="text/javascript" charset="utf-8" <%= e.async ? "async" : "" %>></script><% } %>
+    <script src="/assets/script/main" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="/assets/style/main"/>
+    <link rel="stylesheet" href="/assets/style/form"/>
+    <% for(let e of styles) { %><link rel="stylesheet" href="<%=e.name%>" type="text/css" media="<%=e.media%>" /><% } %>
+    <% for(let e of scripts) { %><script src="<%=e.name%>" type="text/javascript" charset="utf-8" <%= e.async ? "async" : "" %> <%= e.defer ? "defer" : "" %>></script><% } %>
+  </head>
+  <body>
+    <header>
+      <h1 id="title"><%=namespace%></h1>
+      <img id="nav-btn" src="/assets/img/owned/logo.svg" alt="" />
+    </header>
+    <aside id="nav">
+      <h2 class="title">Navigation</h2>
+      <nav>
+        <span><a href="/"></a>HOME</span>
+        <span><a href="/apps"></a>APPS</span>
+        <span><a href="/account/sign-in"></a>SIGN IN</span>
+        <span><a href="/account/sign-up"></a>SIGN UP</span>
+        <span><a href="/status"></a>STATUS</span>
+        <span><a href="/about"></a>ABOUT</span>
+      </nav>
+      <api-weather status="weather temperature" timer="5000" show-icon></api-weather>
+    </aside>
+    <section>
+      <%- include(content + ".html", {title,namespace}); %>
+    </section>
+    <footer>
+      <div class="social-links">
+        <span id="" style="--c:#4267B2;" class="fab fa-facebook-f"></span>
+        <span id="" style="--c:#DB4437;" class="fab fa-youtube"></span>
+        <span id="" style="--c:#1DA1F2;" class="fab fa-twitter"></span>
+        <span id="" style="--c:#7289DA;" class="fab fa-discord"></span>
+        <span id="" style="--c:#DB4437;" class="fab fa-google"></span>
+      </div>
+      <pre class="footer-text">
+        Copyright &copy; <%=namespace%>. All Rights Reserved.
+        | <a href="/info/terms-of-use" target="about:blank">Terms of Use</a> | <a href="/info/privacy-policy" target="about:blank">Privacy Policy</a> |</pre>
+    </footer>
+    <div id="snackbar">
+      <span class="label"> </span>
+      <span class="action">Dismiss</span>
+    </div>
+    <%- include("form.html", {title,namespace}); %>
+    <div id="bg"></div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "format_version": [0,0,1],
+  "header": {
+    "identifier": "headquarter",
+    "display_name": "Head Quarter",
+    "price": "#count * 0.25 * 1"
+  },
+  "structure": {
+    
+  }
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+              linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  background-color: #708090;
+  background-size: 64px 128px;
+}
+header {
+  background: linear-gradient(135deg,hsl(0,0%,15%),#070707);
+  user-select: none;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+header > #title {
+  display: block;
+  font-size: 30px;
+  font-family: Courier New;
+  font-weight: 600;
+  color: white;
+}
+header > .menu {
+  display: block;
+	font-size: 30px;
+	font-family: Courier New;
+	font-weight: 700;
+	color: #444;
+	line-height: 1;
+	width: 100%;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	padding: 10px;
+  background: linear-gradient(90deg, #ffd700 0%, #ffa700 27%, #ff7700 30%, #ff6000 72%, #ff3000 75%, #ff0000 100%);
+}
+section {
+  position: relative;
+  top: 80px;
+  width: 100%;
+  min-height: 80vh;
+}
+section > #calculation {
+  position: relative;
+  width: 75vw;
+  background: yellow;
+  margin: auto;
+  top: 10vh;
+  border-radius: 2px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+section > #calculation > .title {
+  background: #fff;
+  padding: 5px;
+  font-family: Courier New;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  left: 25px;
+  border-radius: 5px;
+}
+section > #calculation > .inputs {
+  width: 70%;
+  margin: auto;
+  border-radius: 3px;
+}
+section > #calculation > .inputs > input {
+  width: 100%;
+  height: 26px;
+  font-size: 20px;
+  line-height: 1.1;
+  outline: none;
+  text-align: center;
+  display: block;
+}
+section > #calculation > input {
+  margin-top: 15px;
+  width: 45%;
+  display: block;
+  margin-left: 15%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Courier;
+  padding: 5px;
+}

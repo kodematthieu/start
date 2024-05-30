@@ -1,0 +1,14 @@
+{
+  "name": "graphics",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "author": "Karel Matthieu L. Logro <mickreys249@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "pixi.js": "^5.3.7"
+  }
+}

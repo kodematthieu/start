@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 40px;
+  width: 100%;
+  border-bottom: 0.5px solid #aaa;
+  display: flex;
+}
+header .select-all {
+  width: 40%;
+  height: calc(100% - 4px);
+  border-right: 0.5px solid #aaa;
+  margin: 2px 0px;
+  align-items: center;
+}
+.select-all input {
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+  margin: 7.5px;
+  margin-top: 5.5px;
+}
+.select-all label {
+  font-family: serif;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-left: -5px;
+}
+header .delete {
+  width: 30%;
+  height: calc(100% - 4px);
+  border-right: 0.5px solid #aaa;
+  border-left: 0.5px solid #aaa;
+  margin: 2px 0px;
+}
+.delete input {
+  vertical-align: middle;
+  height: 25px;
+  width: 5px;
+  margin: 7.5px;
+  margin-top: 7.5px;
+  opacity: 0;
+}
+.delete label {
+  fonts-family: serif;
+  font-size: 20px;
+}
+header .delete-all {
+  width: 40%;
+  height: calc(100% - 4px);
+  border-left: 0.5px solid #aaa;
+  margin: 2px 0px;
+  align-items: center;
+}
+.delete-all input {
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+  margin: 7.5px;
+  margin-top: 5.5px;
+}
+.delete-all label {
+  font-family: serif;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-left: -5px;
+}

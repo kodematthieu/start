@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+#turn {
+  font-family: "Poppins", Sans-Serif;
+  margin-left: 20px;
+}
+#game-status {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  transform: translate(-50%, -150%);
+  height: 75px;
+  width: 100%;
+  box-shadow: 0 0 5px #0003;
+  background: #222;
+  user-select: none;
+}
+#game-status > .message {
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px cyan;
+  text-shadow: 0 0 5px gold;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  max-width: 250px;
+  height: 56.25px;
+  line-height: 56.25px;
+  text-align: center;
+  background: #555;
+  color: gold;
+  font-size: 40px;
+  font-family: "Poppins", Sans-Serif;
+}
+#game-status > p {
+  font-family: "Poppins", Sans-Serif;
+  text-shadow: 0 0 5px gold;
+  color: gold;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: calc(50% + 25px);
+  left: 50%;
+  font-size: 7px;
+  display: none;
+}
+#game-settings {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  transform: translate(-50%, 50%);
+  height: 75px;
+  width: 100%;
+  box-shadow: 0 0 5px #0003;
+  background: #222;
+  user-select: none;
+  justify-content: space-around;
+  display: flex;
+}
+#game-settings > * {
+  transform: translateY(-50%);
+  top: 50%;
+  position: relative;
+}

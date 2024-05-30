@@ -1,0 +1,6 @@
+#title {
+  background: linear-gradient(to bottom right, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "route": "/",
+    "title": "Home",
+    "style": ["index"],
+    "script": ["index"],
+    "content": "index"
+  }
+]

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(90deg, #0ff 0%, #3cf 28%, #69f 30%, #96f 72%, #c3f 74%, #f0f 100%);
+  box-shadow: 0 5px 5px #0007;
+  z-index: 50;
+  top: 0;
+}
+header > #title {
+  font-family: Courier;
+  width: 75%;
+  height: 100%;
+  line-height: 50px;
+  font-size: 35px;
+  margin: auto;
+  user-select: none;
+  color: #fff;
+}
+header > #acc-icon {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-radius: 6px;
+}
+header > #acc-div {
+  position: absolute;
+  right: 5px;
+  top: 50px;
+  background: #fff;
+  width: 35%;
+  box-shadow: 0 5px 5px #0005;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+header > #acc-div > input {
+  width: 100%;
+  border: none;
+  height: 20px;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  font-family: "Poppins", Sans-Serif;
+  transition: all 0.2s ease;
+  display: none;
+  background: #fff;
+  text-align: center;
+}
+header > #acc-div > input[type = "button"]:hover {
+  background: #bbb;
+}
+header > #acc-setup {
+  background: #fff;
+  width: 70%;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  box-shadow: 0 7px 7px #0005;
+  display: none;
+}
+header > #acc-setup > div {
+  width: 95%;
+  margin: 25px auto;
+  position: relative;
+}
+header > #acc-setup > div > label {
+  position: absolute;
+  transform: translateY(-80%);
+  top: 0;
+  left: 0;
+  font-family: "Poppins", Courier;
+  font-size: 12px;
+}
+header > #acc-setup > div > label.error {
+  transform: translateY(100%);
+  font-size: 10px;
+  bottom: 0;
+  color: red;
+}
+header > #acc-setup > div > input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #555;
+  outline: none;
+}
+header > #acc-setup > input[type = "button"] {
+  height: 25px;
+  width: 75px;
+  font-family: "Poppins", Sans-Serif;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+header > #acc-setup > input[type = "button"].cancel {
+  background-color: #ee9617;
+  background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  margin-left: 10px;
+}
+header > #acc-setup > input[type = "button"].confirm {
+  background-color: #00b712;
+  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+  margin-left: 105px;
+}
+section {
+  z-index: 0;
+  margin-top: 70px;
+  padding-bottom: 10px;
+  min-height: 63vh;
+}
+section > article {
+  box-shadow: 5px 5px 5px #555d;
+  border-radius: 7px;
+  overflow: hidden;
+  width: 370px;
+  margin: auto;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: scale(0);
+  user-select: none;
+  transition: 0.5s ease;
+}
+section > article:hover {
+  transform: scale(1.03);
+}
+section > article > img {
+  margin: 0 5px;
+  margin-top: 5px;
+  width: 360px;
+  height: 270px;
+}
+section > article > h3 {
+  color: white;
+  margin: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  font-family: Courier;
+  font-size: 20px;
+}
+footer {
+  background: #5555;
+  min-height: 100px;
+}
+footer > .credit:before {
+  content: "Made by: ";
+}
+footer > .credit {
+  font-family: Courier;
+  color: #555;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes rainbow {
+  0% { background-color: #ff0000; }
+  8.333% { background-color: #ff8000; }
+  16.667% { background-color: #ffff00; }
+  25.000% { background-color: #80ff00; }
+  33.333% { background-color: #00ff00; }
+  41.667% { background-color: #00ff80; }
+  50.000% { background-color: #00ffff; }
+  58.333% { background-color: #0080ff; }
+  66.667% { background-color: #0000ff; }
+  75.000% { background-color: #8000ff; }
+  83.333% { background-color: #ff00ff; }
+  91.667% { background-color: #ff0080; }
+  100.00% { background-color: #ff0000; }
+}

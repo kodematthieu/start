@@ -1,0 +1,56 @@
+{
+  "name": "bright-chest",
+  "version": "0.0.1-Indev",
+  "description": "A website of multiple uses.",
+  "main": "/lib-servers",
+  "scripts": {
+    "test": "nodemon lib-servers",
+    "start": "node lib-servers",
+    "git:publish": "git add . && git commit -m \"v$npm_package_version\" && git push origin master"
+  },
+  "dependencies": {
+    "@material/snackbar": "^8.0.0",
+    "colors": "^1.4.0",
+    "common-tags": "^1.8.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "discord.js": "^12.4.1",
+    "discord.js-commando": "github:discordjs/Commando",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-device": "^0.4.2",
+    "express-merror": "^1.0.0",
+    "express-session": "^1.17.1",
+    "faunadb": "^3.0.1",
+    "merge-anything": "^3.0.6",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.11",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "passport": "^0.4.1",
+    "passport-custom": "^1.1.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "ping": "^0.3.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^3.0.3",
+    "suncalc": "^1.8.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmatthieu15/starry-star.git"
+  },
+  "keywords": [
+    "BrightChest",
+    "Website",
+    "Browser"
+  ],
+  "author": "Karel Matthieu L. Logro <mickreys249@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmatthieu15/starry-star/issues"
+  },
+  "homepage": "https://github.com/kmatthieu15/starry-star#readme"
+}

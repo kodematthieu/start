@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    g {
+      transform: translate(50px, 50px)
+    }
+    g .orbit {
+      animation-duration: 2s;
+      animation-name: rotation;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <g>
+    <circle cx="0%" cy="0%" r="35%" stroke-width="7.5%" stroke="#36096d" fill="transparent"/>
+    <circle class="orbit" cx="0%" cy="-35%" r="10%" fill="#734ae8"/>
+  </g>
+</svg> 

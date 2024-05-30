@@ -1,0 +1,4 @@
+{
+  "resources": [ "textures", "ui", "texts", "font", "entity", "items", "animations", "animation_controllers", "models", "particles", "sounds", "render_controllers", "materials" ],
+  "data": [ "spawn_rules", "trading", "behavior_trees", "entities", "items", "loot_tables", "recipes" ]
+}

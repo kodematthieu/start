@@ -1,0 +1,114 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: courier;
+}
+section {
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  left: 50%;
+  top: 5%;
+  margin-bottom: 5%;
+  transform: translateX(-50%);
+  position: absolute;
+  background: linear-gradient(to bottom right,#19d7f8,#fbdf93);
+}
+input[type="text"]:disabled {
+  background: white;
+}
+.result1 {
+  width: 94%;
+  margin: 4px;
+  margin-bottom: 0px;
+  height: 50px;
+  border: 2px solid #19d7f8;
+  border-bottom: none;
+  padding: 0px 5px;
+  text-align: right;
+  font-size: 35px;
+}
+.result1::selection {
+  color: #19d7f8;
+  background: #fd00da;
+}
+.result2 {
+  width: 94%;
+  margin: 4px;
+  margin-top: -0.5px;
+  height: 25px;
+  border: 2px solid #19d7f8;
+  border-top: none;
+  padding: 0px 5px;
+  text-align: right;
+  font-size: 20px;
+}
+.result2::selection {
+  background: #19d7f8;
+  color: #fd00da;
+}
+.btn {
+  width: 97.7%;
+  margin: 4px;
+  //background: white;
+}
+.buttons {
+  background: linear-gradient(to bottom right,#19d7f8,#fd00da);
+  outline: none;
+  border: 1px solid #fbdf93;
+  border-radius: 7px;
+  font-size: 35px;
+  color: white;
+  transition: 0.5s ease;
+}
+.clrBtn, .moreBtn, .delBtn {
+  width: 110.75px;
+  height: 75px;
+}
+.clrBtn:hover, .delBtn:hover {
+  color: red;
+  font-weight: 700;
+  border-color: red;
+}
+.moreBtn:hover {
+  color: purple;
+  font-weight: 700;
+  border-color: purple;
+}
+.more {
+  width: 100%;
+  margin: 0px;
+  height: 100px;
+  background: white;
+  display: none;
+}
+.parenOpen, .parenClose, .cube {
+  width: 75px;
+  height: 75px;
+  margin-top: 10px;
+  margin-right: 7.55px;
+}
+.num, .operation, .equalBtn, .decimalBtn {
+  height: 75px;
+  width: 75px;
+  margin-top: 10px;
+}
+.num, .equalBtn, .decimalBtn {
+  margin-right: 7.55px;
+}
+.operation:hover, .equalBtn:hover {
+  font-weight: 700;
+  color: green;
+  border-color: green;
+}
+.num:hover {
+  color: blue;
+  font-weight: 700;
+  border-color: blue;
+}
+.decimalBtn:hover {
+  color: yellow;
+  font-weight: 700;
+  border-color: yellow;
+}

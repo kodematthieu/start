@@ -1,0 +1,22 @@
+{
+  "name": "games",
+  "version": "1.0.2",
+  "description": "",
+  "main": "lib-servers/index.js",
+  "scripts": {
+    "start": "node lib-servers/index.js",
+    "test": "nodemon lib-servers/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "md5": "^2.2.1",
+    "nedb": "^1.8.0",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.2.0"
+  },
+  "engines": {
+    "node": "^12.x.x"
+  },
+  "author": "Karel Matthieu <mickreys249@gmail.com>",
+  "license": "ISC"
+}

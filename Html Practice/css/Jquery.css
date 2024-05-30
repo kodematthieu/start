@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(
+      135deg,
+      #708090 21px,
+      #d9ecff 22px,
+      #d9ecff 24px,
+      transparent 24px,
+      transparent 67px,
+      #d9ecff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        #708090 21px,
+        #d9ecff 22px,
+        #d9ecff 24px,
+        transparent 24px,
+        transparent 67px,
+        #d9ecff 67px,
+        #d9ecff 69px,
+        transparent 69px
+      )
+      0 64px;
+  background-color: #708090;
+  background-size: 64px 128px;
+}
+footer > #plusbtn > ul > li:nth-child(1) > #icon {
+	background: linear-gradient(to bottom right, #5FC 0%, #3FEFBA 27%, #00DF9C 30%, #00BF86 72%, #00AF7A 75%, #009F6F 100%);
+}
+footer > #plusbtn > ul > li:nth-child(2) > #icon {
+	background: linear-gradient(to bottom right, #a5f 0%, #973FEF 27%, #7000DF 30%, #6000BF 72%, #5800AF 75%, #50009F 100%);
+}
+footer > #plusbtn > ul > li:nth-child(3) > #icon {
+  background: linear-gradient(
+    to bottom right,
+    #7f5 0%,
+    #62EF3F 27%,
+    #2DDF00 30%,
+    #26BF00 72%,
+    #23AF00 75%,
+    #209F00 100%
+  );
+}
+footer > #plusbtn > ul > li:nth-child(4) > #icon {
+  background: linear-gradient(
+    to bottom right,
+    #59f 0%,
+    #3F85EF 27%,
+    #0059DF 30%,
+    #004CBF 72%,
+    #0046AF 75%,
+    #00409F 100%
+  );
+}
+footer > #plusbtn > ul > li:nth-child(5) > #icon {
+  background: linear-gradient(
+    to bottom right,
+    #f55 0%,
+    #e33 27%,
+    #d00 30%,
+    #b00 72%,
+    #a00 75%,
+    #900 100%
+  );
+}

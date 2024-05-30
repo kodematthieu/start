@@ -1,0 +1,19 @@
+{
+  "file": {
+    "ext": {
+      "javascript": "js",
+      "python": "py",
+      "shell": "sh",
+      "c++": "cpp|cxx",
+      "c": "c"
+    },
+    "run": {
+      "javascript": "node",
+      "python": "python",
+      "shell": "bash",
+      "c++": "compile:gcc",
+      "c": "compile:gcc"
+    }
+  },
+  "editor": "nano"
+}

@@ -1,0 +1,20 @@
+* {margin: 0;padding: 0;box-sizing: border-box}
+
+.ui.button {
+  padding: 0px;
+}
+.ui.button > i {
+  font-size: 50px;
+}
+
+main {
+  margin: 25px 25px 0 25px;
+  width: max-content;
+  overflow: scroll;
+}
+main > #tracks > * {
+  margin-bottom: 15px;
+}
+main > .button {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#scores {
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  font-family: Courier;
+}
+#control {
+  margin: 0 auto;
+  height: 165px;
+  width: 165px;
+  position: relative;
+}
+#control > input {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  position: absolute;
+}
+#control > input:nth-child(1) {
+  top: 56px;
+}
+#control > input:nth-child(2) {
+  left: 56px;
+}
+#control > input:nth-child(3) {
+  top: 56px;
+  right: 0;
+}
+#control > input:nth-child(4) {
+  left: 56px;
+  bottom: 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Web Sandbox</title>
+    <link rel="stylesheet" href="../css/sandbox1.css"/>
+  </head>
+  <body>
+    <section>
+      <div class="radio-btns">
+        <input type="radio" name="web" value="html" checked="checked"/>
+        <input type="radio" name="web" value="css"/>
+        <input type="radio" name="web" value="js"/>
+        <input type="radio" name="web" value="result"/>
+      </div>
+      <div class="html">
+        <h1 class="title">HTML</h1>
+        <textarea></textarea>
+      </div>
+      <div class="css">
+        <h1 class="title">CSS</h1>
+        <textarea></textarea>
+      </div>
+      <div class="js">
+        <h1 class="title">JS</h1>
+        <textarea></textarea>
+      </div>
+      <div class="result">
+        <h1 class="title">Output</h1>
+        <iframe scrolling="yes">
+        </iframe>
+        <table class="console">
+          <tr>
+            <td>1</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <input type="button" class="resetBtn" value="Reset!"/>
+      <input type="button" class="runBtn" value="Run!"/>
+    </section>
+    <script src="../js/sandbox1.js"></script>
+  </body>
+</html>
