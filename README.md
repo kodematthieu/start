@@ -27,8 +27,8 @@ I discovered programming at the age of 11. My favorite algorithm in this reposit
 ### Tools and Editors
 
 - **Notepad++**: I started my coding journey using Notepad++.
-- **Acode**: I later found Acode, which proved to be a superior editor for my needs.
-- **Termux**: For terminal-related projects involving Node.js, C++, and Python, I used Termux.
+- [**Acode**](https://github.com/deadlyjack/Acode): I later found Acode, which proved to be a superior editor for my needs.
+- [**Termux**](https://github.com/termux/termux-app): For terminal-related projects involving Node.js, C++, and Python, I used Termux.
 
 ## Acknowledgements
 
